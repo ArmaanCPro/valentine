@@ -1,0 +1,68 @@
+﻿body {
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;  /* Stacks elements vertically */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.centered-div {
+    text-align: center; /* Centers text inside the div (optional) */
+    padding: 20px;
+}
+
+.centered-div img {
+    max-width: 100%;  /* Makes sure the image is responsive */
+    height: auto;     /* Keeps the aspect ratio intact */
+    margin-top: 10px; /* Adds space between the text and image */
+}
+
+.horizontal-div {
+    display: flex;          /* Enables Flexbox */
+    justify-content: center; /* Centers elements horizontally within the container */
+    gap: 20px;              /* Adds spacing between the two elements */
+    margin-top: 20px;       /* Adds spacing between the new div and the one above it */
+}
+
+.box {
+    padding: 20px;          /* Add padding for visual appeal */
+    text-align: center;     /* Centers text inside each box */
+    flex: 1;                /* Optional: Allows the boxes to take up equal width */
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#yesButton {
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+
+#noButton {
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+}
+
+#togepi_gif {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
